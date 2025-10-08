@@ -67,10 +67,10 @@ Tạo được file `.img` chạy được trong QEMU, in ra dòng chữ từ ke
 | Thành phần | Nhiệm vụ | Người phụ trách | Study Task |
 |-------------|-----------|------------------|-------------|
 | **Bootloader (boot.asm)** | Tạo bootloader nạp kernel từ sector 2 | Tuấn | Học về Real Mode, BIOS Interrupt, FAT12 |
-| **print.asm** | Viết hàm in ký tự ra màn hình | Tuấn | Tìm hiểu interrupt 0x10 và text mode |
+| **print.asm** | Viết hàm in ký tự ra màn hình | Tuyên | Tìm hiểu interrupt 0x10 và text mode |
 | **kernel.c** | Tạo entry chính, in chuỗi “Kernel started” | Triệu | Hiểu về GDT, chuyển từ ASM sang C |
-| **build_image.sh** | Ghép boot + kernel thành file .img | Minh | Học lệnh `dd`, `objcopy`, và `ld` |
-| **run_qemu.sh** | Script chạy thử trên QEMU | Tuấn | Tìm hiểu `qemu-system-x86_64` và các tham số |
+| **build_image.sh** | Ghép boot + kernel thành file .img, tạo makefile build bootloader+kernel | Minh | Học lệnh `dd`, `objcopy`, và `ld` |
+| **run_qemu.sh** | Script chạy thử trên QEMU | Triệu | Tìm hiểu `qemu-system-x86_64` và các tham số |
 
 ### 🧪 Kết quả mong đợi
 - Tạo thành công `os.img`
@@ -136,5 +136,6 @@ Kernel có thể tạo nhiều tiến trình, chuyển đổi CPU giữa các ti
 
 🧑‍💻 **Tác giả:** Nguyễn Anh Tuấn  
 📅 **Ngày tạo:** {datetime.now().strftime("%Y-%m-%d")}
+
 
 
