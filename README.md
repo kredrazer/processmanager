@@ -68,8 +68,8 @@ Tạo được file `.img` chạy được trong QEMU, in ra dòng chữ từ ke
 |-------------|-----------|------------------|-------------|
 | **Bootloader (boot.asm)** | Tạo bootloader nạp kernel từ sector 2 | Tuấn | Học về Real Mode, BIOS Interrupt, FAT12 |
 | **print.asm** | Viết hàm in ký tự ra màn hình | Tuấn | Tìm hiểu interrupt 0x10 và text mode |
-| **kernel.c** | Tạo entry chính, in chuỗi “Kernel started” | Tuấn | Hiểu về GDT, chuyển từ ASM sang C |
-| **build_image.sh** | Ghép boot + kernel thành file .img | Tuấn | Học lệnh `dd`, `objcopy`, và `ld` |
+| **kernel.c** | Tạo entry chính, in chuỗi “Kernel started” | Triệu | Hiểu về GDT, chuyển từ ASM sang C |
+| **build_image.sh** | Ghép boot + kernel thành file .img | Minh | Học lệnh `dd`, `objcopy`, và `ld` |
 | **run_qemu.sh** | Script chạy thử trên QEMU | Tuấn | Tìm hiểu `qemu-system-x86_64` và các tham số |
 
 ### 🧪 Kết quả mong đợi
@@ -89,7 +89,7 @@ Kernel có thể tạo nhiều tiến trình, chuyển đổi CPU giữa các ti
 | Thành phần | Nhiệm vụ | Người phụ trách | Study Task |
 |-------------|-----------|------------------|-------------|
 | **process.c** | Xây dựng cấu trúc PCB (Process Control Block) | Tuấn | Ôn về PCB, Stack riêng từng process |
-| **scheduler.c** | Tạo bộ lập lịch Round Robin | Tuấn | Học thuật toán lập lịch cơ bản (RR, FCFS) |
+| **scheduler.c** | Tạo bộ lập lịch Round Robin | Tuyên | Học thuật toán lập lịch cơ bản (RR, FCFS) |
 | **timer.c** | Cấu hình timer tick (giả lập) | Tuấn | Tìm hiểu PIT 8253 và ngắt IRQ0 |
 | **interrupts.c** | Xử lý ngắt và lưu/khôi phục context | Tuấn | Hiểu cơ chế IDT, ISR, context switch |
 | **syscall.c** | Tạo bảng system call | Tuấn | Nắm rõ cơ chế trap và int 0x80 |
@@ -136,4 +136,5 @@ Kernel có thể tạo nhiều tiến trình, chuyển đổi CPU giữa các ti
 
 🧑‍💻 **Tác giả:** Nguyễn Anh Tuấn  
 📅 **Ngày tạo:** {datetime.now().strftime("%Y-%m-%d")}
+
 
