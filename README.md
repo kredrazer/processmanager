@@ -135,7 +135,8 @@ Kernel có thể tạo nhiều tiến trình, chuyển đổi CPU giữa các ti
 ---
 
 🧑‍💻 **Tác giả:** Nguyễn Anh Tuấn  
-📅 **Ngày tạo:** {datetime.now().strftime("%Y-%m-%d")}
+📅 **Ngày tạo:** 8/10/2025
+
 
 
 
